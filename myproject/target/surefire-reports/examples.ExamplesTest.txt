@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 11.726 s <<< FAILURE! - in examples.ExamplesTest
+testAll[3][2]  Time elapsed: 0.978 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 201, response time in milliseconds: 577, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+
+testAll[3][3]  Time elapsed: 0.827 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:34 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53
+
+testAll[4][6]  Time elapsed: 0.758 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+
+testAll[4][7]  Time elapsed: 0.488 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 476, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+
+testAll[4][8]  Time elapsed: 0.402 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 395, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+
+testAll[4][9]  Time elapsed: 0.576 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+classpath:examples/users/step3.feature:33
+

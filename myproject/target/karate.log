@@ -1,0 +1,2918 @@
+13:16:31.502 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:16:32.508 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:32.541 [main] INFO  com.intuit.karate - [print] Hello World 
+13:16:33.221 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:33.224 [main] INFO  com.intuit.karate - [print] hello world 
+13:16:33.312 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:33.314 [main] INFO  com.intuit.karate - [print] https://simple-books-api.glitch.me 
+13:16:33.315 [main] INFO  com.intuit.karate - [print] hello karate 
+13:16:33.320 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:33.687 [main] DEBUG com.intuit.karate - request:
+1 > POST https://www.kloia.com/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: www.kloia.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane","username":"jane_pool","phone":12546758485}
+
+13:16:34.274 [main] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 403
+1 < Date: Fri, 17 May 2024 12:16:34 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 17
+1 < Connection: keep-alive
+1 < Strict-Transport-Security: max-age=31536000
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ds1oHgAPjBWuZi%2Buu9a4q0PGepsRi7lvrGUHXBLjhgTx0oTclooPCWD5NWuTj34vdl%2Faak%2FiH9LD6wkgxS4r4Xp8YCgBF%2FMF4vfMOG4T736D1ZSRyR0aUpHJwxGkhLQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 88538a15eb73215c-MAD
+1 < alt-svc: h3=":443"; ma=86400
+1 < Set-Cookie: __cf_bm=EMFeoLckAim0rvgMALaDtkVdFrOxmr7UKSp1dSnBGso-1715948194-1.0.1.1-4E0jEDsENco8BOq.Dt4IVWsNVVBEg9UMsawEHirVvjKyr_7T3ouwkJ7nCtiJYWK4RKQhN7x9t2V6wrAhII6KTw; Max-Age=1715949994000; Expires=Thu, 31 Aug 56400 20:23:14 GMT; Domain=www.kloia.com; Secure
+1 < Set-Cookie: __cfruid=c0a541eae66b869702b4ddcbf855de6d13efe3b1-1715948194; Domain=www.kloia.com; Secure
+Request Forbidden
+
+13:16:34.278 [main] ERROR com.intuit.karate - classpath:examples/users/step2.feature:22
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 577, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+13:16:34.303 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:34.313 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 134
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:34.959 [main] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:34 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854751160,"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:34.989 [main] ERROR com.intuit.karate - classpath:examples/users/step2.feature:53
+And match responseHeaders['Date'] == '#null'
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:34 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53
+13:16:35.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:35.137 [main] INFO  com.intuit.karate - [print] {
+  "bookId": 5,
+  "customerName": "Ayoub"
+}
+ 
+13:16:35.142 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:35.148 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 140
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"category":{"id":0,"name":"categoryName"},"name":"petName","photoUrls":["someURL"],"tags":[{"id":0,"name":"tagName"}],"status":"available"}
+
+13:16:39.500 [main] DEBUG com.intuit.karate - response time in milliseconds: 4351
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854751161,"category":{"id":0,"name":"categoryName"},"name":"petName","photoUrls":["someURL"],"tags":[{"id":0,"name":"tagName"}],"status":"available"}
+
+13:16:39.511 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.514 [main] INFO  com.intuit.karate - [print] current id is -> 10 
+13:16:39.519 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.521 [main] INFO  com.intuit.karate - [print] current id is -> 20 
+13:16:39.528 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.530 [main] INFO  com.intuit.karate - [print] current id is -> 30 
+13:16:39.534 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.565 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.584 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/50
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:40.315 [main] DEBUG com.intuit.karate - response time in milliseconds: 730
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:40 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+
+13:16:40.317 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:40.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:40.324 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/51
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:40.800 [main] DEBUG com.intuit.karate - response time in milliseconds: 476
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:40 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+
+13:16:40.804 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 476, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:40.809 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:40.811 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/52
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:41.206 [main] DEBUG com.intuit.karate - response time in milliseconds: 395
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+
+13:16:41.207 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 395, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:41.212 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:41.221 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/70
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:41.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 390
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+
+13:16:41.613 [main] ERROR com.intuit.karate - classpath:callers/callerGet.feature:6
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+13:16:41.614 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:33
+And def getFeature = call read('classpath:callers/callerGet.feature')
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+classpath:examples/users/step3.feature:33
+13:16:41.788 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:41.790 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:42.057 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1711138805&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2Fc1bkr4sLOg4pzHRg%2BLRY6BiNW1NN1mYxRwUThVMaLo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711138805&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2Fc1bkr4sLOg4pzHRg%2BLRY6BiNW1NN1mYxRwUThVMaLo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1711138858
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 21055
+1 < Server: cloudflare
+1 < CF-RAY: 88538a469d786669-MAD
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+13:16:42.062 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:16:42.148 [main] DEBUG com.intuit.karate - response time in milliseconds: 86
+2 < 200
+2 < Date: Fri, 17 May 2024 12:16:42 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1711210920&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=H5Fk4jFzxK30OHeZhtwz2MXCb5%2FfgHXyTr4xsN9LW7g%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711210920&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=H5Fk4jFzxK30OHeZhtwz2MXCb5%2FfgHXyTr4xsN9LW7g%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1711210958
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 9527
+2 < Server: cloudflare
+2 < CF-RAY: 88538a474afa3849-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+13:16:42.151 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.153 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+13:16:42.334 [main] DEBUG com.intuit.karate - response time in milliseconds: 181
+1 < 201
+1 < Date: Fri, 17 May 2024 12:16:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1715948202&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=y4qFihLS3P4BhsTnOVU%2BTlE%2FqCoCfCFfXmD9PnHI1as%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715948202&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=y4qFihLS3P4BhsTnOVU%2BTlE%2FqCoCfCFfXmD9PnHI1as%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1715948221
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 88538a47ce292150-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+13:16:42.338 [main] INFO  com.intuit.karate - [print] created id is:  11 
+13:16:42.664 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:16:42.666 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715948202666
+13:16:42.668 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:16:42.685 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.688 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.692 [pool-1-thread-1] INFO  com.intuit.karate - [print] Hello World 
+13:16:42.705 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.697 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.709 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.711 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://www.kloia.com/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: www.kloia.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane","username":"jane_pool","phone":12546758485}
+
+13:16:42.711 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.713 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "bookId": 5,
+  "customerName": "Ayoub"
+}
+ 
+13:16:42.715 [pool-1-thread-2] INFO  com.intuit.karate - [print] hello world 
+13:16:42.718 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.721 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.722 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 134
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:42.728 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 140
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"category":{"id":0,"name":"categoryName"},"name":"petName","photoUrls":["someURL"],"tags":[{"id":0,"name":"tagName"}],"status":"available"}
+
+13:16:42.730 [pool-1-thread-2] INFO  com.intuit.karate - [print] current id is -> 10 
+13:16:42.734 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.735 [pool-1-thread-2] INFO  com.intuit.karate - [print] current id is -> 20 
+13:16:42.738 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.747 [pool-1-thread-2] INFO  com.intuit.karate - [print] current id is -> 30 
+13:16:42.745 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.751 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.754 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/50
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:42.751 [pool-1-thread-3] INFO  com.intuit.karate - [print] https://simple-books-api.glitch.me 
+13:16:42.759 [pool-1-thread-3] INFO  com.intuit.karate - [print] hello karate 
+13:16:42.771 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.778 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/51
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:42.798 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/hello.feature
+13:16:42.838 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:examples/users/helloWorld.feature
+13:16:42.911 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 200
+1 < 403
+1 < Date: Fri, 17 May 2024 12:16:42 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 17
+1 < Connection: keep-alive
+1 < Strict-Transport-Security: max-age=31536000
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tmHAbTvJPv6nrOjI5OZzJNI%2F1MpGlJLSarSKtL5jpKsaOJWwFkCXhgw77%2F0QdP2jsDgkUEiSW3uZ9S3vwmyAGgFFYLG1ZSrbGH3B6oHXu9kjjXpiCPJjUrbVwyAOpEE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 88538a4bea4d1bc5-MAD
+1 < alt-svc: h3=":443"; ma=86400
+1 < Set-Cookie: __cf_bm=evf_Swed8.Vl9bPX_TtKurDRvl2Hynh6FrMdNzZZyCo-1715948202-1.0.1.1-tn83czgSHUAMbLQpAmPOdg2qhpyL3.E9T7D9fbDsIaQu.1EGtZM88gea9K9BkotrEL9TrLleTbux.0B0ChWznQ; Max-Age=1715950002000; Expires=Thu, 31 Aug 56400 22:36:42 GMT; Domain=www.kloia.com; Secure
+1 < Set-Cookie: __cfruid=6d1f3887e6cca14b79701518fb2fdef5d57028dc-1715948202; Domain=www.kloia.com; Secure
+Request Forbidden
+
+13:16:42.913 [pool-1-thread-4] ERROR com.intuit.karate - classpath:examples/users/step2.feature:22
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 200, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+13:16:42.915 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:42.918 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/52
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:43.160 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 437
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854751164,"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:43.160 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 431
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854751163,"category":{"id":0,"name":"categoryName"},"name":"petName","photoUrls":["someURL"],"tags":[{"id":0,"name":"tagName"}],"status":"available"}
+
+13:16:43.166 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:43.166 [pool-1-thread-5] ERROR com.intuit.karate - classpath:examples/users/step2.feature:53
+And match responseHeaders['Date'] == '#null'
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:43 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53
+13:16:43.168 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:43.171 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:43.172 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+13:16:43.228 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:examples/users/step2.feature
+13:16:43.345 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+
+13:16:43.345 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+
+13:16:43.345 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 591
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+
+13:16:43.345 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 174
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1711542861&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=EpBQt6mC%2FIGRoodhsDAbFm5J0NamV9Dgor63S6eNG5c%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711542861&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=EpBQt6mC%2FIGRoodhsDAbFm5J0NamV9Dgor63S6eNG5c%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1711542862
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 18465
+1 < Server: cloudflare
+1 < CF-RAY: 88538a4e4a241511-MAD
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+13:16:43.346 [pool-1-thread-4] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 427, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:43.349 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:16:43.345 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 566, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:43.346 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 591, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+13:16:43.433 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:examples/users/step3.feature
+13:16:43.458 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 109
+2 < 200
+2 < Date: Fri, 17 May 2024 12:16:43 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1711210920&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=H5Fk4jFzxK30OHeZhtwz2MXCb5%2FfgHXyTr4xsN9LW7g%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1711210920&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=H5Fk4jFzxK30OHeZhtwz2MXCb5%2FfgHXyTr4xsN9LW7g%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1711210958
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 9528
+2 < Server: cloudflare
+2 < CF-RAY: 88538a4f7e3d6671-MAD
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+13:16:43.517 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 342
+1 < 201
+1 < Date: Fri, 17 May 2024 12:16:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1715948203&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=XS09LaXzfpQnnzEtlW2ukQ4Or%2Bz2My1B1fh52a4oWkQ%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1715948203&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=XS09LaXzfpQnnzEtlW2ukQ4Or%2Bz2My1B1fh52a4oWkQ%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1715948221
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 88538a4e4ee1150d-MAD
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+13:16:43.519 [pool-1-thread-5] INFO  com.intuit.karate - [print] created id is:  11 
+13:16:43.571 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:examples/users/users.feature
+13:17:14.775 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:17:14.779 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715948234779
+13:17:14.784 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:17:15.892 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:15.892 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:15.892 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:15.892 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:15.892 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:16.231 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:17:16.231 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:17:16.231 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:17:16.231 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:17:16.232 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:17:17.012 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 779
+1 < 200
+1 < Date: Fri, 17 May 2024 12:17:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:17:17.030 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:17:17.044 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 813
+1 < 200
+1 < Date: Fri, 17 May 2024 12:17:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:17:17.044 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 812
+1 < 409
+1 < Date: Fri, 17 May 2024 12:17:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:17:17.044 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 813
+1 < 200
+1 < Date: Fri, 17 May 2024 12:17:16 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:17:17.046 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 812, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:17:17.050 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:17:17.069 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:17:17.105 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 874
+1 < 200
+1 < Date: Fri, 17 May 2024 12:17:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:17:17.108 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:17:17.750 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+13:17:17.844 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+13:17:17.910 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 878
+2 < 201
+2 < Date: Fri, 17 May 2024 12:17:17 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-DauNG3D9OcR+NR7TGx8jil+/bck"
+{"created":true,"orderId":"fsC3v7T4gZJhUBUaAt2XO"}
+
+13:17:17.919 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+13:17:17.921 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 852
+1 < 200
+1 < Date: Fri, 17 May 2024 12:17:17 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:17:18.142 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+13:17:18.219 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1111
+2 < 404
+2 < Date: Fri, 17 May 2024 12:17:18 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:17:18.279 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+13:17:18.317 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+13:22:44.138 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:22:44.187 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715948564183
+13:22:44.252 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:22:52.479 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:52.480 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:52.480 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:52.480 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:52.479 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:40.356 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:40.356 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:40.359 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:23:40.359 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:23:40.360 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:24:04.078 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 23711
+1 < 200
+1 < Date: Fri, 17 May 2024 12:24:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:24:04.079 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 23708
+1 < 200
+1 < Date: Fri, 17 May 2024 12:24:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:24:04.080 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 23709
+1 < 409
+1 < Date: Fri, 17 May 2024 12:24:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:24:04.080 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 23710
+1 < 200
+1 < Date: Fri, 17 May 2024 12:24:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:24:04.080 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 23709
+1 < 200
+1 < Date: Fri, 17 May 2024 12:24:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:24:04.120 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 23709, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:24:04.148 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:04.158 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:24:04.160 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:24:04.255 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:24:04.601 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 441
+2 < 404
+2 < Date: Fri, 17 May 2024 12:24:04 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:24:04.734 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 575
+2 < 201
+2 < Date: Fri, 17 May 2024 12:24:04 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-alnJGDYIvhMCWbr43UVpoXAIB9Q"
+{"created":true,"orderId":"2E7r83qVl9jh9rE176uNM"}
+
+13:24:04.916 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 661
+1 < 200
+1 < Date: Fri, 17 May 2024 12:24:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:27:45.942 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:27:45.949 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715948865948
+13:27:45.959 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:27:47.458 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:47.458 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:47.458 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:47.460 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:47.458 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:47.943 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:27:47.943 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:47.943 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:47.943 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:47.951 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:50.478 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2533
+1 < 200
+1 < Date: Fri, 17 May 2024 12:27:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:27:50.488 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2537
+1 < 200
+1 < Date: Fri, 17 May 2024 12:27:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:27:50.505 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:27:50.513 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:50.521 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:50.534 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2589
+1 < 200
+1 < Date: Fri, 17 May 2024 12:27:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:27:50.535 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2590
+1 < 200
+1 < Date: Fri, 17 May 2024 12:27:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:27:50.539 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:27:50.641 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2697
+1 < 409
+1 < Date: Fri, 17 May 2024 12:27:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:27:50.642 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 2697, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:27:50.913 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 407
+2 < 201
+2 < Date: Fri, 17 May 2024 12:27:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-dau6epFnQx/X18G8z8YQLb4JgDw"
+{"created":true,"orderId":"iWIUaew31XYdYrX6UpHgm"}
+
+13:27:51.187 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 666
+1 < 200
+1 < Date: Fri, 17 May 2024 12:27:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:27:51.279 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 738
+2 < 404
+2 < Date: Fri, 17 May 2024 12:27:51 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:27:51.687 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+13:27:51.755 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+13:27:51.830 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+13:27:52.080 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+13:27:52.215 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+13:27:52.272 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+13:32:55.065 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:32:55.068 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715949175068
+13:32:55.074 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:32:55.768 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:55.768 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:55.769 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:55.771 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:55.771 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:56.062 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:32:56.063 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:32:56.063 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:32:56.064 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:32:56.064 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:32:56.810 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 744
+1 < 200
+1 < Date: Fri, 17 May 2024 12:32:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:32:56.814 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 750
+1 < 200
+1 < Date: Fri, 17 May 2024 12:32:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:32:56.815 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 752
+1 < 200
+1 < Date: Fri, 17 May 2024 12:32:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:32:56.819 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 755
+1 < 200
+1 < Date: Fri, 17 May 2024 12:32:56 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:32:56.820 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:32:56.825 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:32:56.829 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:32:56.831 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:32:57.212 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 382
+1 < 200
+1 < Date: Fri, 17 May 2024 12:32:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:32:57.223 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 398
+2 < 404
+2 < Date: Fri, 17 May 2024 12:32:57 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:32:57.339 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 506
+2 < 201
+2 < Date: Fri, 17 May 2024 12:32:57 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-YC946R8/V7fONuGwONQeJf0rsSE"
+{"created":true,"orderId":"hh0CHk5AkyIpbS_oR9BBg"}
+
+13:32:57.520 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1457
+1 < 409
+1 < Date: Fri, 17 May 2024 12:32:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:32:57.523 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 1457, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:32:58.148 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+13:32:58.216 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+13:32:58.276 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+13:32:58.423 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+13:32:58.498 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+13:32:58.594 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+13:33:38.245 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:33:38.247 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715949218247
+13:33:38.253 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:33:38.968 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:38.968 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:38.969 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:38.971 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:38.972 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:38.969 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:39.244 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:33:39.244 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:33:39.244 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:33:39.244 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:33:39.245 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:33:39.250 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:33:39.948 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 700
+1 < 200
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:33:39.948 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 699
+1 < 200
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:33:39.963 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:33:39.964 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:33:40.001 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 757
+1 < 200
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:33:40.012 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 762
+1 < 200
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:33:40.017 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 772
+1 < 200
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:33:40.019 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 775
+1 < 409
+1 < Date: Fri, 17 May 2024 12:33:39 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:33:40.021 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 775, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:33:40.332 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 368
+2 < 404
+2 < Date: Fri, 17 May 2024 12:33:40 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:33:40.508 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 544
+2 < 201
+2 < Date: Fri, 17 May 2024 12:33:40 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-KNiiGq4SIEDx72XHwrsJBvb7XVk"
+{"created":true,"orderId":"bXj65n6dOUjIDR3CIFFCb"}
+
+13:33:40.664 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+13:33:40.721 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+13:33:40.765 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+13:33:40.862 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+13:33:40.932 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+13:33:40.972 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+13:40:08.436 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:40:08.439 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715949608439
+13:40:08.446 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+13:40:09.135 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.135 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.135 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.135 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.135 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.135 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:09.378 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:09.379 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+13:40:09.378 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:09.378 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:09.379 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:09.383 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:40:10.123 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 738
+1 < 200
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+13:40:10.191 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 811
+1 < 200
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:40:10.211 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 831
+1 < 200
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:40:10.234 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 854
+1 < 409
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+13:40:10.236 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 854, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+13:40:10.306 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 923
+1 < 200
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+13:40:10.306 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 926
+1 < 200
+1 < Date: Fri, 17 May 2024 12:40:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+13:40:10.316 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+13:40:10.316 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+13:40:10.732 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 416
+2 < 201
+2 < Date: Fri, 17 May 2024 12:40:10 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-8W+ctDE/rqfWMrLtum5WwI2uBlw"
+{"created":true,"orderId":"wkKZWKWOfRZ0efUvpVrZQ"}
+
+13:40:10.931 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+13:40:10.991 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 667
+2 < 404
+2 < Date: Fri, 17 May 2024 12:40:10 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+13:40:11.036 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+13:40:11.085 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+13:40:11.179 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+13:40:11.241 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+13:40:11.343 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+14:12:09.032 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:12:09.732 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:12:09.993 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:12:10.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 846
+1 < 200
+1 < Date: Fri, 17 May 2024 13:12:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:12:11.397 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:12:11.402 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:12:11.891 [main] DEBUG com.intuit.karate - response time in milliseconds: 489
+1 < 200
+1 < Date: Fri, 17 May 2024 13:12:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:14:48.355 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:14:48.359 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715951688359
+14:14:48.368 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+14:14:49.145 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.142 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.143 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.143 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.142 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.142 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:14:49.435 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:49.435 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+14:14:49.435 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:49.435 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:49.435 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:49.435 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:14:50.201 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 764
+1 < 409
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+14:14:50.203 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 764, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+14:14:50.210 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 774
+1 < 200
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:14:50.223 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+14:14:50.223 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 776
+1 < 200
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:14:50.227 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 780
+1 < 200
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:14:50.227 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 780
+1 < 200
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+14:14:50.232 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+14:14:50.235 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 788
+1 < 200
+1 < Date: Fri, 17 May 2024 13:14:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:14:50.792 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 560
+2 < 201
+2 < Date: Fri, 17 May 2024 13:14:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-yleJg2z9JReeJJw5xHVf0HvPft8"
+{"created":true,"orderId":"gQrL9KwLahwFiYcePG2vi"}
+
+14:14:50.888 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+14:14:50.934 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 710
+2 < 404
+2 < Date: Fri, 17 May 2024 13:14:50 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+14:14:50.950 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+14:14:51.039 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+14:14:51.186 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+14:14:51.243 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+14:14:51.285 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+14:15:40.421 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:15:40.424 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715951740424
+14:15:40.451 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 2 - ^verify the creation of token after an authentication$
+14:15:41.118 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:15:41.386 [main] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"maliiki","clientEmail":"maliiki@example.com"}
+
+14:15:42.222 [main] DEBUG com.intuit.karate - response time in milliseconds: 833
+1 < 409
+1 < Date: Fri, 17 May 2024 13:15:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+14:15:42.225 [main] ERROR com.intuit.karate - src/test/java/simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 833, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+src/test/java/simple_books_api/books/authentification.feature:14
+14:15:42.766 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/simple_books_api/books/authentification.feature
+14:38:11.294 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:38:11.297 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715953091297
+14:38:11.303 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+14:38:12.168 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.168 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.168 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.168 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.168 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.168 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:12.441 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:38:12.442 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:38:12.441 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:38:12.443 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:38:12.443 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"ayouble","clientEmail":"ayouble@example.com"}
+
+14:38:12.445 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:38:13.191 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 200
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:38:13.196 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 747
+1 < 200
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+14:38:13.196 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 747
+1 < 200
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:38:13.196 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 744
+1 < 200
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:38:13.196 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 200
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:38:13.211 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+14:38:13.213 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+14:38:13.775 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1331
+1 < 201
+1 < Date: Fri, 17 May 2024 13:38:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 82
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"52-DKiC/E5eXcHYcH8IhrR8pvjNO9c"
+{"accessToken":"c34b19d6e64a277211c2fcc30d58da4c908526b82668d4075d65828da61b3211"}
+
+14:38:14.319 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1106
+2 < 201
+2 < Date: Fri, 17 May 2024 13:38:14 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-vkltJpIT206BES1jR3UZKNQYcd0"
+{"created":true,"orderId":"IbQ5JOgkNY5OyS7IveF38"}
+
+14:38:14.336 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1124
+2 < 404
+2 < Date: Fri, 17 May 2024 13:38:14 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+14:38:14.637 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+14:38:14.713 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+14:38:14.764 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+14:38:14.900 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+14:38:15.036 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+14:38:15.084 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature
+14:39:45.692 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:39:45.694 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1715953185694
+14:39:45.702 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+14:39:46.568 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.569 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.568 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.568 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.568 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.568 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+14:39:46.858 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:39:46.858 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:39:46.858 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:39:46.858 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/5
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:39:46.858 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/books/2
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:39:46.859 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://simple-books-api.glitch.me/api-clients
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 60
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"clientName":"ayouble","clientEmail":"ayouble@example.com"}
+
+14:39:47.536 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 677
+1 < 200
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:39:47.536 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 677
+1 < 200
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 120
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"78-j/iSKeyVOvbJ1tvDEXM1nGhdATo"
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}
+
+14:39:47.549 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":5,"customerName":"Ayoub"}
+
+14:39:47.619 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 761
+1 < 200
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:39:47.619 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 760
+1 < 409
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 65
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"41-rjAEsJfLskSzU5wzBOncJcKHOOY"
+{"error":"API client already registered. Try a different email."}
+
+14:39:47.619 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 761
+1 < 200
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 417
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU"
+[{"id":1,"name":"The Russian","type":"fiction","available":true},{"id":2,"name":"Just as I Am","type":"non-fiction","available":false},{"id":3,"name":"The Vanishing Half","type":"fiction","available":true},{"id":4,"name":"The Midnight Library","type":"fiction","available":true},{"id":5,"name":"Untamed","type":"non-fiction","available":true},{"id":6,"name":"Viscount Who Loved Me","type":"fiction","available":true}]
+
+14:39:47.621 [pool-1-thread-1] ERROR com.intuit.karate - classpath:simple_books_api/books/authentification.feature:14
+Then status 201
+status code was: 409, expected: 201, response time in milliseconds: 760, url: https://simple-books-api.glitch.me/api-clients, response: 
+{"error":"API client already registered. Try a different email."}
+classpath:simple_books_api/books/authentification.feature:14
+14:39:47.626 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+2 > POST https://simple-books-api.glitch.me/orders
+2 > Authorization: Bearer b0528a72038648bd071b441b21f63e1882909cf5adce9e452c502c03f3586f26
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 35
+2 > Host: simple-books-api.glitch.me
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.11)
+2 > Accept-Encoding: gzip,deflate
+{"bookId":2,"customerName":"Ayoub"}
+
+14:39:47.705 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 846
+1 < 200
+1 < Date: Fri, 17 May 2024 13:39:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 125
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < etag: W/"7d-Ckimjt0oK2HpwoZelYONnQZ4+4w"
+{"id":2,"name":"Just as I Am","author":"Cicely Tyson","type":"non-fiction","price":20.33,"current-stock":0,"available":false}
+
+14:39:48.325 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 775
+2 < 201
+2 < Date: Fri, 17 May 2024 13:39:48 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 50
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"32-f5Dv2Lz184QpCftCDeAotpf9LRQ"
+{"created":true,"orderId":"13g_n6wFx83NMOJq2qRS9"}
+
+14:39:48.344 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 6 (5 remaining) classpath:simple_books_api/books/authentification.feature
+14:39:48.425 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:simple_books_api/books/type_check.feature
+14:39:48.479 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 6 (3 remaining) classpath:simple_books_api/orders/books.feature
+14:39:48.657 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:simple_books_api/orders/successful_order.feature
+14:39:48.729 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1101
+2 < 404
+2 < Date: Fri, 17 May 2024 13:39:48 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 55
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < etag: W/"37-EwJEhBGIU3KiOH3ypr8c6yRFaMQ"
+{"error":"This book is not in stock. Try again later."}
+
+14:39:48.823 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 6 (1 remaining) classpath:simple_books_api/orders/unsuccessful_order.feature
+14:39:48.989 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 6 (0 remaining) classpath:simple_books_api/orders/unvalid_books.feature

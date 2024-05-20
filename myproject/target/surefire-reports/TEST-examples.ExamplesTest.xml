@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="examples.ExamplesTest" time="11.726" tests="16" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/test-classes:/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/classes:/home/ayoubsqli/.m2/repository/io/gatling/gatling-maven-plugin/4.9.0/gatling-maven-plugin-4.9.0.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-enterprise-plugin-commons/1.9.1/gatling-enterprise-plugin-commons-1.9.1.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-scanner/1.5.0/gatling-scanner-1.5.0.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-asm-shaded/9.7.0/gatling-asm-shaded-9.7.0.jar:/home/ayoubsqli/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/ayoubsqli/.m2/repository/net/masterthought/cucumber-reporting/5.3.1/cucumber-reporting-5.3.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/home/ayoubsqli/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/home/ayoubsqli/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/home/ayoubsqli/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/ayoubsqli/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/ayoubsqli/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/home/ayoubsqli/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ayoubsqli/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/home/ayoubsqli/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/ayoubsqli/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/home/ayoubsqli/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar:/home/ayoubsqli/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ayoubsqli/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ayoubsqli/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ayoubsqli/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/home/ayoubsqli/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/home/ayoubsqli/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/ayoubsqli/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/home/ayoubsqli/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/ayoubsqli/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ayoubsqli/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ayoubsqli/.m2/repository/com/intuit/karate/karate-junit5/1.2.0/karate-junit5-1.2.0.jar:/home/ayoubsqli/.m2/repository/com/intuit/karate/karate-core/1.2.0/karate-core-1.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/js/js-scriptengine/21.2.0/js-scriptengine-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/sdk/graal-sdk/21.2.0/graal-sdk-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/js/js/21.2.0/js-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/regex/regex/21.2.0/regex-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/truffle/truffle-api/21.2.0/truffle-api-21.2.0.jar:/home/ayoubsqli/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/ayoubsqli/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/home/ayoubsqli/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/home/ayoubsqli/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/ayoubsqli/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/ayoubsqli/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/ayoubsqli/.m2/repository/com/linecorp/armeria/armeria/1.13.4/armeria-1.13.4.jar:/home/ayoubsqli/.m2/repository/io/micrometer/micrometer-core/1.7.6/micrometer-core-1.7.6.jar:/home/ayoubsqli/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/ayoubsqli/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport/4.1.70.Final/netty-transport-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-common/4.1.70.Final/netty-common-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-buffer/4.1.70.Final/netty-buffer-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver/4.1.70.Final/netty-resolver-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-http2/4.1.70.Final/netty-codec-http2-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec/4.1.70.Final/netty-codec-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-handler/4.1.70.Final/netty-handler-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-http/4.1.70.Final/netty-codec-http-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-haproxy/4.1.70.Final/netty-codec-haproxy-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns/4.1.70.Final/netty-resolver-dns-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-dns/4.1.70.Final/netty-codec-dns-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.70.Final/netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.70.Final/netty-resolver-dns-classes-macos-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-epoll/4.1.70.Final/netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.70.Final/netty-transport-classes-epoll-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.44.Final/netty-tcnative-boringssl-static-2.0.44.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-handler-proxy/4.1.70.Final/netty-handler-proxy-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-socks/4.1.70.Final/netty-codec-socks-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.6.0/brotli4j-1.6.0.jar:/home/ayoubsqli/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.6.0/native-linux-x86_64-1.6.0.jar:/home/ayoubsqli/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/ayoubsqli/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/ayoubsqli/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/ayoubsqli/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/home/ayoubsqli/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/home/ayoubsqli/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/home/ayoubsqli/.m2/repository/org/antlr/antlr4-runtime/4.9.2/antlr4-runtime-4.9.2.jar:/home/ayoubsqli/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/ayoubsqli/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/ayoubsqli/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/ayoubsqli/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/ayoubsqli/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/ayoubsqli/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/ayoubsqli/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/home/ayoubsqli/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/home/ayoubsqli/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/home/ayoubsqli/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/home/ayoubsqli/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/ayoubsqli/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayoubsqli/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayoubsqli/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/ayoubsqli/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ayoubsqli/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/surefire/surefirebooter741483203240688364.jar /home/ayoubsqli/IdeaProjects/test_karate/myproject/target/surefire 2024-05-17T13-16-30_209-jvmRun1 surefire16469117015028505243tmp surefire_013167030813086309254tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/test-classes:/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/classes:/home/ayoubsqli/.m2/repository/io/gatling/gatling-maven-plugin/4.9.0/gatling-maven-plugin-4.9.0.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-enterprise-plugin-commons/1.9.1/gatling-enterprise-plugin-commons-1.9.1.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-scanner/1.5.0/gatling-scanner-1.5.0.jar:/home/ayoubsqli/.m2/repository/io/gatling/gatling-asm-shaded/9.7.0/gatling-asm-shaded-9.7.0.jar:/home/ayoubsqli/.m2/repository/com/typesafe/config/1.4.3/config-1.4.3.jar:/home/ayoubsqli/.m2/repository/net/masterthought/cucumber-reporting/5.3.1/cucumber-reporting-5.3.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/home/ayoubsqli/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.1/jackson-datatype-jsr310-2.10.1.jar:/home/ayoubsqli/.m2/repository/org/apache/velocity/velocity-engine-core/2.1/velocity-engine-core-2.1.jar:/home/ayoubsqli/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/home/ayoubsqli/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/ayoubsqli/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/ayoubsqli/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/home/ayoubsqli/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ayoubsqli/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/home/ayoubsqli/.m2/repository/org/jsoup/jsoup/1.12.1/jsoup-1.12.1.jar:/home/ayoubsqli/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20191001.1/owasp-java-html-sanitizer-20191001.1.jar:/home/ayoubsqli/.m2/repository/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar:/home/ayoubsqli/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ayoubsqli/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ayoubsqli/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ayoubsqli/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/home/ayoubsqli/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/home/ayoubsqli/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/ayoubsqli/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/home/ayoubsqli/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/home/ayoubsqli/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ayoubsqli/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ayoubsqli/.m2/repository/com/intuit/karate/karate-junit5/1.2.0/karate-junit5-1.2.0.jar:/home/ayoubsqli/.m2/repository/com/intuit/karate/karate-core/1.2.0/karate-core-1.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/js/js-scriptengine/21.2.0/js-scriptengine-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/sdk/graal-sdk/21.2.0/graal-sdk-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/js/js/21.2.0/js-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/regex/regex/21.2.0/regex-21.2.0.jar:/home/ayoubsqli/.m2/repository/org/graalvm/truffle/truffle-api/21.2.0/truffle-api-21.2.0.jar:/home/ayoubsqli/.m2/repository/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar:/home/ayoubsqli/.m2/repository/org/thymeleaf/thymeleaf/3.0.14.RELEASE/thymeleaf-3.0.14.RELEASE.jar:/home/ayoubsqli/.m2/repository/ognl/ognl/3.1.26/ognl-3.1.26.jar:/home/ayoubsqli/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/ayoubsqli/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/ayoubsqli/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/ayoubsqli/.m2/repository/com/linecorp/armeria/armeria/1.13.4/armeria-1.13.4.jar:/home/ayoubsqli/.m2/repository/io/micrometer/micrometer-core/1.7.6/micrometer-core-1.7.6.jar:/home/ayoubsqli/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/ayoubsqli/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport/4.1.70.Final/netty-transport-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-common/4.1.70.Final/netty-common-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-buffer/4.1.70.Final/netty-buffer-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver/4.1.70.Final/netty-resolver-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-http2/4.1.70.Final/netty-codec-http2-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec/4.1.70.Final/netty-codec-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-handler/4.1.70.Final/netty-handler-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-http/4.1.70.Final/netty-codec-http-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-haproxy/4.1.70.Final/netty-codec-haproxy-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns/4.1.70.Final/netty-resolver-dns-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-dns/4.1.70.Final/netty-codec-dns-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.70.Final/netty-resolver-dns-native-macos-4.1.70.Final-osx-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.70.Final/netty-resolver-dns-classes-macos-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final-linux-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-epoll/4.1.70.Final/netty-transport-native-epoll-4.1.70.Final-linux-x86_64.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.70.Final/netty-transport-native-unix-common-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.70.Final/netty-transport-classes-epoll-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.44.Final/netty-tcnative-boringssl-static-2.0.44.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-handler-proxy/4.1.70.Final/netty-handler-proxy-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/io/netty/netty-codec-socks/4.1.70.Final/netty-codec-socks-4.1.70.Final.jar:/home/ayoubsqli/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.6.0/brotli4j-1.6.0.jar:/home/ayoubsqli/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.6.0/native-linux-x86_64-1.6.0.jar:/home/ayoubsqli/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/ayoubsqli/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/ayoubsqli/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/ayoubsqli/.m2/repository/ch/qos/logback/logback-classic/1.2.9/logback-classic-1.2.9.jar:/home/ayoubsqli/.m2/repository/ch/qos/logback/logback-core/1.2.9/logback-core-1.2.9.jar:/home/ayoubsqli/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.32/jcl-over-slf4j-1.7.32.jar:/home/ayoubsqli/.m2/repository/org/antlr/antlr4-runtime/4.9.2/antlr4-runtime-4.9.2.jar:/home/ayoubsqli/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar:/home/ayoubsqli/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/ayoubsqli/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/ayoubsqli/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/ayoubsqli/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/home/ayoubsqli/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/home/ayoubsqli/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar:/home/ayoubsqli/.m2/repository/de/siegmar/fastcsv/2.0.0/fastcsv-2.0.0.jar:/home/ayoubsqli/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar:/home/ayoubsqli/.m2/repository/io/github/classgraph/classgraph/4.8.108/classgraph-4.8.108.jar:/home/ayoubsqli/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/ayoubsqli/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ayoubsqli/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ayoubsqli/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/ayoubsqli/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ayoubsqli/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ayoubsqli"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject/target/surefire/surefirebooter741483203240688364.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7-Ubuntu-122.04.1"/>
+    <property name="user.name" value="ayoubsqli"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.5.0-28-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ayoubsqli/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="/home/ayoubsqli/IdeaProjects/test_karate/myproject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="17.0.10+7-Ubuntu-122.04.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testAll[1][1]" classname="examples.ExamplesTest" time="1.69"/>
+  <testcase name="testAll[2][1]" classname="examples.ExamplesTest" time="0.089"/>
+  <testcase name="testAll[3][1]" classname="examples.ExamplesTest" time="0.012"/>
+  <testcase name="testAll[3][2]" classname="examples.ExamplesTest" time="0.978">
+    <failure message="status code was: 403, expected: 201, response time in milliseconds: 577, url: https://www.kloia.com/, response: &#10;Request Forbidden&#10;classpath:examples/users/step2.feature:22" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 201, response time in milliseconds: 577, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+</failure>
+    <system-out><![CDATA[13:16:33.320 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:33.687 [main] DEBUG com.intuit.karate - request:
+1 > POST https://www.kloia.com/
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 58
+1 > Host: www.kloia.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Jane","username":"jane_pool","phone":12546758485}
+
+13:16:34.274 [main] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 403
+1 < Date: Fri, 17 May 2024 12:16:34 GMT
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 17
+1 < Connection: keep-alive
+1 < Strict-Transport-Security: max-age=31536000
+1 < Content-Security-Policy: upgrade-insecure-requests
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ds1oHgAPjBWuZi%2Buu9a4q0PGepsRi7lvrGUHXBLjhgTx0oTclooPCWD5NWuTj34vdl%2Faak%2FiH9LD6wkgxS4r4Xp8YCgBF%2FMF4vfMOG4T736D1ZSRyR0aUpHJwxGkhLQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 88538a15eb73215c-MAD
+1 < alt-svc: h3=":443"; ma=86400
+1 < Set-Cookie: __cf_bm=EMFeoLckAim0rvgMALaDtkVdFrOxmr7UKSp1dSnBGso-1715948194-1.0.1.1-4E0jEDsENco8BOq.Dt4IVWsNVVBEg9UMsawEHirVvjKyr_7T3ouwkJ7nCtiJYWK4RKQhN7x9t2V6wrAhII6KTw; Max-Age=1715949994000; Expires=Thu, 31 Aug 56400 20:23:14 GMT; Domain=www.kloia.com; Secure
+1 < Set-Cookie: __cfruid=c0a541eae66b869702b4ddcbf855de6d13efe3b1-1715948194; Domain=www.kloia.com; Secure
+Request Forbidden
+
+13:16:34.278 [main] ERROR com.intuit.karate - classpath:examples/users/step2.feature:22
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 577, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[3][3]" classname="examples.ExamplesTest" time="0.827">
+    <failure message="match failed: EQUALS&#10;  $ | not null (LIST:STRING)&#10;  [&quot;Fri, 17 May 2024 12:16:34 GMT&quot;]&#10;  &apos;#null&apos;&#10;&#10;classpath:examples/users/step2.feature:53" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:34 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53
+</failure>
+    <system-out><![CDATA[13:16:34.303 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:34.313 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 134
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:34.959 [main] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 < 200
+1 < Date: Fri, 17 May 2024 12:16:34 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":9223372036854751160,"category":{"id":1,"name":"cats"},"name":"kitty","photoUrls":["www.kitty.com"],"tags":[{"id":0,"name":"sweet"}],"status":"available"}
+
+13:16:34.989 [main] ERROR com.intuit.karate - classpath:examples/users/step2.feature:53
+And match responseHeaders['Date'] == '#null'
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:34 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53
+---------------------------------------------------------
+feature: classpath:examples/users/step2.feature
+scenarios:  3 | passed:  1 | failed:  2 | time: 1.6400
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][1]" classname="examples.ExamplesTest" time="0.015"/>
+  <testcase name="testAll[4][2]" classname="examples.ExamplesTest" time="4.366"/>
+  <testcase name="testAll[4][3]" classname="examples.ExamplesTest" time="0.01"/>
+  <testcase name="testAll[4][4]" classname="examples.ExamplesTest" time="0.007"/>
+  <testcase name="testAll[4][5]" classname="examples.ExamplesTest" time="0.038"/>
+  <testcase name="testAll[4][6]" classname="examples.ExamplesTest" time="0.758">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 730, url: https://simple-books-api.glitch.me/posts/50, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /posts/50&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:examples/users/step3.feature:26" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></failure>
+    <system-out><![CDATA[13:16:39.565 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:39.584 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/50
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:40.315 [main] DEBUG com.intuit.karate - response time in milliseconds: 730
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:40 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+
+13:16:40.317 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 730, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][7]" classname="examples.ExamplesTest" time="0.488">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 476, url: https://simple-books-api.glitch.me/posts/51, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /posts/51&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:examples/users/step3.feature:26" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 476, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></failure>
+    <system-out><![CDATA[13:16:40.322 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:40.324 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/51
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:40.800 [main] DEBUG com.intuit.karate - response time in milliseconds: 476
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:40 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+
+13:16:40.804 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 476, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][8]" classname="examples.ExamplesTest" time="0.402">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 395, url: https://simple-books-api.glitch.me/posts/52, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /posts/52&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:examples/users/step3.feature:26" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 395, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></failure>
+    <system-out><![CDATA[13:16:40.809 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:40.811 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/52
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:41.206 [main] DEBUG com.intuit.karate - response time in milliseconds: 395
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+
+13:16:41.207 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:26
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 395, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[4][9]" classname="examples.ExamplesTest" time="0.576">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot GET /posts/70&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:callers/callerGet.feature:6&#10;classpath:examples/users/step3.feature:33" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+classpath:examples/users/step3.feature:33
+]]></failure>
+    <system-out><![CDATA[13:16:41.212 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:16:41.221 [main] DEBUG com.intuit.karate - request:
+1 > GET https://simple-books-api.glitch.me/posts/70
+1 > Host: simple-books-api.glitch.me
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.10)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:16:41.611 [main] DEBUG com.intuit.karate - response time in milliseconds: 390
+1 < 404
+1 < Date: Fri, 17 May 2024 12:16:41 GMT
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 147
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < content-security-policy: default-src 'none'
+1 < x-content-type-options: nosniff
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+
+13:16:41.613 [main] ERROR com.intuit.karate - classpath:callers/callerGet.feature:6
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+13:16:41.614 [main] ERROR com.intuit.karate - classpath:examples/users/step3.feature:33
+And def getFeature = call read('classpath:callers/callerGet.feature')
+status code was: 404, expected: 200, response time in milliseconds: 390, url: https://simple-books-api.glitch.me/posts/70, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/70</pre>
+</body>
+</html>
+
+classpath:callers/callerGet.feature:6
+classpath:examples/users/step3.feature:33
+---------------------------------------------------------
+feature: classpath:examples/users/step3.feature
+scenarios:  9 | passed:  5 | failed:  4 | time: 6.3941
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="testAll[5][1]" classname="examples.ExamplesTest" time="0.367"/>
+  <testcase name="testAll[5][2]" classname="examples.ExamplesTest" time="0.32"/>
+</testsuite>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-5","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-1","id":3},{"content":"pool-1-thread-3","id":4},{"content":"pool-1-thread-6","id":5},{"content":"pool-1-thread-4","id":6}];
+var items = [{"id":1,"group":1,"content":"simple_books_api\/orders\/unsuccessful_order[1:2]","start":1715949609031,"end":1715949610991,"title":"simple_books_api\/orders\/unsuccessful_order[1:2] 13:40:09.031-13:40:10.991 Verify unSuccessful Order Creation with unAvailable Book"},{"id":2,"group":2,"content":"simple_books_api\/books\/type_check[1:2]","start":1715949609032,"end":1715949610139,"title":"simple_books_api\/books\/type_check[1:2] 13:40:09.032-13:40:10.139 check the case 'fiction' and 'non-fiction'"},{"id":3,"group":3,"content":"simple_books_api\/books\/authentification[1:2]","start":1715949609031,"end":1715949610235,"title":"simple_books_api\/books\/authentification[1:2] 13:40:09.031-13:40:10.235 verify the creation of token after an authentication","className":"failed"},{"id":4,"group":4,"content":"simple_books_api\/orders\/books[1:3]","start":1715949609031,"end":1715949610192,"title":"simple_books_api\/orders\/books[1:3] 13:40:09.031-13:40:10.192 Getting books to check their availability"},{"id":5,"group":5,"content":"simple_books_api\/orders\/unvalid_books[1:3]","start":1715949609031,"end":1715949610214,"title":"simple_books_api\/orders\/unvalid_books[1:3] 13:40:09.031-13:40:10.214 Getting books to check their availability"},{"id":6,"group":6,"content":"simple_books_api\/orders\/successful_order[1:2]","start":1715949609031,"end":1715949610734,"title":"simple_books_api\/orders\/successful_order[1:2] 13:40:09.031-13:40:10.734 Verify Successful Order Creation with Available Book"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

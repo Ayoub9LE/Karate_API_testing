@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: examples.TestParallel
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.141 s <<< FAILURE! - in examples.TestParallel
+testParallel  Time elapsed: 1.14 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 591, url: https://simple-books-api.glitch.me/posts/50, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/50</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+status code was: 404, expected: 200, response time in milliseconds: 566, url: https://simple-books-api.glitch.me/posts/51, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/51</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+status code was: 404, expected: 200, response time in milliseconds: 427, url: https://simple-books-api.glitch.me/posts/52, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot GET /posts/52</pre>
+</body>
+</html>
+
+classpath:examples/users/step3.feature:26
+status code was: 403, expected: 201, response time in milliseconds: 200, url: https://www.kloia.com/, response: 
+Request Forbidden
+classpath:examples/users/step2.feature:22
+match failed: EQUALS
+  $ | not null (LIST:STRING)
+  ["Fri, 17 May 2024 12:16:43 GMT"]
+  '#null'
+
+classpath:examples/users/step2.feature:53 ==> expected: <0> but was: <5>
+	at examples.TestParallel.testParallel(TestParallel.java:13)
+
